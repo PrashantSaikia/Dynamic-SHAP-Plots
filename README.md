@@ -1,5 +1,5 @@
 # Dynamic SHAP Plots
-Enabling interactive plotting of the visualizations from the [SHAP](https://github.com/slundberg/shap) project.
+This project enables interactive plotting of the visualizations from the [SHAP](https://github.com/slundberg/shap) project. The plots show the relative importances of the feature variables in a dataset when making predictions on the target variable.
 
 Most of the code is taken from the SHAP library, with minor modifications (like returning the matplotlib figure objects instead of plotting them, changes in the directory structure, etc). The file `dynamic_shap_plots.py` binds them all together to produce the interactive visualizations with the Plotly library.
 
