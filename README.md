@@ -1,7 +1,7 @@
 # Dynamic SHAP Plots
-Enabling dynamic plotting of the visualizations from the [SHAP](https://github.com/slundberg/shap) project.
+Enabling interactive plotting of the visualizations from the [SHAP](https://github.com/slundberg/shap) project.
 
-Most of the code is taken from the SHAP library, with minor modifications (like returning the matplotlib figure objects instead of plotting them, changes in the directory structure, etc). The file `dynamic_shap_plots.py` binds them all together to produce the dynamic visualizations with the Plotly library.
+Most of the code is taken from the SHAP library, with minor modifications (like returning the matplotlib figure objects instead of plotting them, changes in the directory structure, etc). The file `dynamic_shap_plots.py` binds them all together to produce the interactive visualizations with the Plotly library.
 
 ## Requirements:
 ```
