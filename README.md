@@ -4,16 +4,19 @@ Enabling dynamic plotting of the visualizations from the [SHAP](https://github.c
 Most of the code is taken from the SHAP library, with minor modifications (like returning the matplotlib figure objects instead of plotting them, changes in the directory structure, etc). The file `dynamic_shap_plots.py` binds them all together to produce the dynamic visualizations with the Plotly library.
 
 ## Requirements:
+```
 shap
 plotly
 pandas
 sklearn
 matplotlib
 xgboost
+```
+This package has been built and tested on Windows 10 with Python 3.5. Slight modifications may be needed in case of errors when using in Linux or Mac OS.
 
-Some screenshots of the dynamic SHAP visualizations in Jupyter notebook:
+##  Some dynamic SHAP visualizations in Jupyter notebook:
 
-## Summary Plot:
+### 1. Summary Plot:
 ```
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 from dynamic_shap_plots import summary_plot_plotly_fig as sum_plot
@@ -33,7 +36,7 @@ To save the figure:
 plot(plotly_fig, show_link=False, filename=r'path\to\save\figure.html')
 ```
 
-## Dependence Plot:
+### 2. Dependence Plot:
 ```
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 from dynamic_shap_plots import dependence_plot_to_plotly_fig as dep_plot
@@ -57,7 +60,7 @@ Alternately, you can also plot for specific features:
 
 ![](https://user-images.githubusercontent.com/39755678/62591656-e257f880-b902-11e9-8a44-d5f75ad2304e.png)
 
-## Interaction Plot:
+### 3. Interaction Plot:
 ```
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 from dynamic_shap_plots import dependence_plot_to_plotly_fig as dep_plot
