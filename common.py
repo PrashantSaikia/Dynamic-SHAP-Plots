@@ -1,4 +1,4 @@
-from SHAP_Plots.datatypes import DenseData, DenseDataWithIndex
+from datatypes import DenseData, DenseDataWithIndex
 import re
 import pandas as pd
 
