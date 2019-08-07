@@ -24,11 +24,14 @@ plotly_fig = sum_plot(r'path\to\dataset.csv', target='target column')
 
 init_notebook_mode(connected=True)
 iplot(plotly_fig, show_link=False)
-
-plot(plotly_fig, show_link=False, filename=r'path\to\save\figure.html')
 ```
 
 ![](https://user-images.githubusercontent.com/39755678/62591715-16cbb480-b903-11e9-818f-82ce793af4b1.png)
+
+To save the figure:
+```
+plot(plotly_fig, show_link=False, filename=r'path\to\save\figure.html')
+```
 
 ## Dependence Plot:
 ```
