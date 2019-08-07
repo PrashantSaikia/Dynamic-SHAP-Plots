@@ -1,12 +1,10 @@
-from SHAP_Plots.common import Model
-from SHAP_Plots.common import Instance
-from SHAP_Plots.datatypes import Data
-from SHAP_Plots.links import Link
+from common import Model, Instance
+from datatypes import Data
+from links import Link
 
 class Explanation:
     def __init__(self):
         pass
-
 
 class AdditiveExplanation(Explanation):
     def __init__(self, base_value, out_value, effects, effects_var, instance, link, model, data):
@@ -22,7 +20,3 @@ class AdditiveExplanation(Explanation):
         self.model = model
         # assert isinstance(data, Data)
         self.data = data
-
-    # def _rdepr_pretty_(self, pp, cycle):
-    #     print(pp)
-    #     return visualizers.visualize(self)
