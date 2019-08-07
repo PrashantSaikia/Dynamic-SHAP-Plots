@@ -11,6 +11,9 @@ pandas
 sklearn
 matplotlib
 xgboost
+iml
+scipy
+numpy
 ```
 This package has been built and tested on Windows 10 with Python 3.5. Slight modifications may be needed in case of errors when using in Linux or Mac OS.
 
