@@ -1,4 +1,4 @@
-from SHAP_Plots.shap_plots import shap_summary_plot, shap_dependence_plot
+from shap_plots import shap_summary_plot, shap_dependence_plot
 import plotly.tools as tls
 import dash_core_components as dcc
 import pandas as pd
